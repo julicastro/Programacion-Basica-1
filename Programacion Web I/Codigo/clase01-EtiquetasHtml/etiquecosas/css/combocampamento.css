@@ -1,0 +1,319 @@
+@import url(etiquecosas.css);
+.aclaracion{
+    font-style: italic;
+    font-size: 1em;
+    color: #a5a4a4;
+}
+.container{
+    width:95%;
+    margin:auto;
+}
+.personalizacion{
+    border: #c2599b dashed 1.7px;
+    padding: 0.5em;
+}
+#vistaprevia{
+    width: 320px;
+    height:215px;
+    margin: auto;
+    font-family: "signpainterhouseshowcard",serif;
+    background-position: 0 -14px;
+}
+.colizq{
+    border: #f05b83 dashed 1px;
+    background: #fff;
+}
+.descripcion{
+    text-align: center;
+    color: #b7b7b7;
+    margin-bottom: 0.5em;
+}
+.descripcion .tit{
+    color: #434343;
+}
+#vistaprevia h3{
+    color:#df6f6e;
+    text-align: center;
+    font-family: "Just Another Hand", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.opciones label{
+    color:#c2599c;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.3em;
+    line-height: 2em;
+    font-weight: 300;
+}
+.color{
+    text-align: center;
+    max-width: 40px !important;
+    margin-right: 1em !important;
+    
+}.line{
+    margin-top: 0.7em;
+}
+.line input{
+    margin-left: 0.6em;
+}
+.paso{
+    margin-bottom: 1em;
+}
+.izqcolor{
+    float: left;
+}
+.center{
+    text-align: center;
+}
+p.tam{
+    color: #c2599c;
+}
+/*--Personajes--*/
+#personaje, .white-popup{
+    position: relative;
+    border: #c2599b dashed 3px;
+    padding: 1em;
+    background: url(../img/bg.gif);
+    max-width: 960px;
+    margin: auto;
+}
+#personaje .element-item{
+    text-align: center;
+    width: 80px;
+    float: left;
+}
+.derpersonaje{
+    float: right;
+    font-size: 1.1em;
+    margin-right: 1.5em;
+}
+h2.per{
+    display: block;
+    width: auto;
+    float:left;
+}
+.headper{
+    border-bottom: 2px dotted #c2599c;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.1em;
+}
+/*--Personalizacion --*/
+#vistaprevia img{
+    position: relative;
+    top:-56px;
+    left:0px;
+}
+/*--OPCIONES Combo Primaria y Campamento --*/
+.comborosa{
+    background: url(../img/combos/campamento/combo-rosa.png) no-repeat;
+}
+.combomagenta{
+    background: url(../img/combos/campamento/combo-magenta.png) no-repeat;
+}
+.comboverde{
+    background: url(../img/combos/campamento/combo-verde.png) no-repeat;
+}
+.comboazul{
+    background: url(../img/combos/campamento/combo-azul.png) no-repeat;
+}
+.comboceleste{
+    background: url(../img/combos/campamento/combo-celeste.png) no-repeat;
+}
+.combovioleta{
+    background: url(../img/combos/campamento/combo-violeta.png) no-repeat;
+}
+.combolila{
+    background: url(../img/combos/campamento/combo-lila.png) no-repeat;
+}
+.comborojo{
+    background: url(../img/combos/campamento/combo-rojo.png) no-repeat;
+}
+.comboblanros{
+    background: url(../img/combos/campamento/combo-blanco.png) no-repeat;
+    color: #f05b83;
+}
+.comboblancel{
+    background: url(../img/combos/campamento/combo-blanco.png) no-repeat;
+    color: #009bdf;
+}
+/*--OPCIONES Combo Jardin --*/
+.jardinrosa{
+    background: url(../img/combos/campamento/combo-rosa-jardin.png) no-repeat;
+    
+}
+.jardinmagenta{
+    background: url(../img/combos/campamento/combo-magenta-jardin.png) no-repeat;
+}
+.jardinverde{
+    background: url(../img/combos/campamento/combo-verde-jardin.png) no-repeat;
+}
+.jardinazul{
+    background: url(../img/combos/campamento/combo-azul-jardin.png) no-repeat;
+}
+.jardinceleste{
+    background: url(../img/combos/campamento/combo-celeste-jardin.png) no-repeat;
+}
+.jardinvioleta{
+    background: url(../img/combos/campamento/combo-violeta-jardin.png) no-repeat;
+}
+.jardinlila{
+    background: url(../img/combos/campamento/combo-lila-jardin.png) no-repeat;
+}
+.jardinrojo{
+    background: url(../img/combos/campamento/combo-rojo-jardin.png) no-repeat;
+}
+.jardinblanros{
+    background: url(../img/combos/campamento/combo-blanco-jardin.png) no-repeat;
+    color: #f05b83;
+}
+.jardinblancel{
+    background: url(../img/combos/campamento/combo-blanco-jardin.png) no-repeat;
+    color: #009bdf;
+}
+#maxi, #mini{
+   color: #fff;
+}
+.comboblanros #maxi, .comboblanros #mini, .jardinblanros #maxi, .jardinblanros #mini{
+    color: #f05b83;
+}
+.comboblancel #maxi, .comboblancel #mini,.jardinblancel #maxi, .jardinblancel #mini{
+    color: #009bdf;
+}
+.comborosa #spot,.comborosa #cinta, .jardinrosa #spot,.jardinrosa #cinta {
+    color:#f05b83;
+}
+.combomagenta #spot,.combomagenta #cinta, .jardinmagenta #spot,.jardinmagenta #cinta {
+    color: #e00d7b;
+}
+.combovioleta #spot, .combovioleta #cinta, .jardinvioleta #spot, .jardinvioleta #cinta{
+    color:#542785;
+}
+.comboceleste #spot, .comboceleste #cinta, .jardinceleste #spot, .jardinceleste #cinta{
+    color: #009bdf;
+}
+.comboazul #spot, .comboazul #cinta, .jardinazul #spot, .jardinazul #cinta{
+    color: #005da4;
+}
+.combolila #spot, .combolila #cinta, .jardinlila #spot, .jardinlila #cinta{
+    color:#6f589b;
+}
+.comborojo #spot, .comborojo #cinta, .jardinrojo #spot, .jardinrojo #cinta{
+    color: #ed1c24;
+}
+.comboverde #spot, .comboverde #cinta, .jardinverde #spot, .jardinverde #cinta {
+    color:#009d48;
+}
+
+/*Texto Mini*/
+#mini{
+    width: 150px;
+    position: relative;
+    top:-265px;
+    left:50px;
+    text-align: center;
+}
+#mini p{
+    display: inline;
+}
+#mini .normal{
+    font-size: 15.5px;
+}
+#mini .doce{
+    font-size: 11.5px;
+    line-height: 24px;
+}
+/*Texto Cinta*/
+#cinta{
+    width: 200px;
+    position: relative;
+    top:-237px;
+    left:52px;
+    text-align: center;
+}
+#cinta p{
+    display: inline;
+}
+#cinta .normal{
+    font-size: 21px;
+}
+#cinta .doce{
+    font-size: 17px;
+    line-height: 10px;
+}
+/*--Texto Maxi --*/
+#maxi span{
+    position: relative;
+    top:-290px;
+    left:73px;
+    text-align: center;
+    display: block;
+    width: 118px;
+}
+#maxi .normal {
+    font-size: 22px;
+}
+#maxi .doce{
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+/*--OPCIONES spot --*/
+#spot p{
+    position: relative;
+    top: -252px;
+    left: 176px;
+    font-size: 24px;
+    text-align: center;
+    width: 160px;
+    
+}
+#spot p.curvodos{
+    top:-193px;
+    letter-spacing: -0.5px;
+    
+}
+#spot .normal{
+    font-size: 18px;
+}
+#spot .doce{
+    font-size: 17px !important;
+    letter-spacing: -0.5px !important;
+}
+#spot  p.curvodos .doce{
+    letter-spacing: -0.5px !important;
+}
+@media screen and (max-width:60em){
+    #vistaprevia h3{
+   margin-bottom: 8px;}
+}
+@media screen and (min-width:40em){
+    header figure{
+        float: left;
+    }
+    figure.frase{
+        float:right;
+        margin-top: 100px;
+    }
+    
+}
+@media screen and (min-width:50em){
+   
+}
+
+@media screen and (min-width:60em){
+    .colizq{
+        float: left;
+    }
+    .der{
+        float: right;
+        width: 49%;
+    }
+    .opciones{
+        float: right;
+        width:590px;
+    }
+    
+}

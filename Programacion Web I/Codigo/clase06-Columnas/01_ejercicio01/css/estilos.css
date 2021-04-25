@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 1.6em;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size:1em;
+}
+body{
+    font-size: 70%;
+}
+/*Media querie para tablets en adelante*/
+@media screen and (min-width:47em){    
+    body{
+        font-size: 85%;
+    }
+}
+/*Media querie para pcs de escritorio en adelante*/
+@media screen and (min-width:60em){
+    body{
+        font-size: 100%;
+    }
+}
+@media screen and (min-width:70em){
+    body{
+        font-size:110%;
+    }
+}

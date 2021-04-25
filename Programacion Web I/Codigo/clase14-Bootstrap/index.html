@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gris borde-fucsia fixed-top">
+            <!--logo-->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" class="img-fluid logo">
+            </a>
+            <!--boton de colapsado-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--el contenido que se colapsa en mobile-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="borde-celeste">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/slider01.jpg" class="d-block w-100" alt="Slide1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider02.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider03.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>
+        <section id="nosotros" class="container">
+            <div class="text-center">
+                <h2 class="bg-celeste d-inline-block p-2 mt-3 text-uppercase text-white mb-4">Nosotros</h2>
+            </div>
+            <div class="row">
+                <article class="col-12 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea culpa eum labore. Sunt sequi eius natus soluta dicta vero culpa perferendis doloribus. Molestiae qui alias sunt nihil! Quidem, labore quasi.</article>
+                <article class="col-12 col-md-6">
+                    <img src="img/acerca.jpg" alt="Nosotros" class="img-fluid">
+                </article>
+            </div>
+        </section>
+        <section id="servicios" class="container-fluid">
+            <div class="text-center">
+                <h2 class="bg-violeta d-inline-block p-2 mt-3 text-uppercase text-white mb-4">Servicios</h2>
+            </div>
+            <div class="row iconos mb-4">
+                <article class="col-12 col-md-4 bg-violeta text-center p-5">
+                    <img src="img/icono-diseno.png" alt="Diseño">
+                    <h3 class="text-white text-uppercase mt-2">Diseño web</h3>
+                </article>
+                <article class="col-12 col-md-4 bg-celeste text-center p-5">
+                    <img src="img/icono-redes.png" alt="Redes Sociales">
+                    <h3 class="text-white text-uppercase mt-2">Redes Sociales</h3>
+                </article>
+                <article class="col-12 col-md-4 bg-fucsia text-center p-5">
+                    <img src="img/icono-ecommerce.png" alt="Ecommerce">
+                    <h3 class="text-white text-uppercase mt-2">Ecommerce</h3>
+                </article>
+            </div>
+        </section>
+        <section id="portfolio" class="container-fluid borde-fucsia">
+            <div class="text-center">
+                <h2 class="bg-fucsia d-inline-block p-2 mt-3 text-uppercase text-white mb-4">Portfolio</h2>
+            </div>
+            <div class="row mb-5">
+                <article class="col-12 col-sm-6 col-md-3 p-lg-4 text-center">
+                    <img src="img/imagen01.jpg" alt="" class="img-fluid">
+                    <h4 class="bg-fucsia text-center text-white p-2">Título</h4>
+                </article>
+                <article class="col-12 col-sm-6 col-md-3 p-lg-4 text-center">
+                    <img src="img/imagen02.jpg" alt="" class="img-fluid">
+                    <h4 class="bg-fucsia text-center text-white p-2">Título</h4>
+                </article>
+                <article class="col-12 col-sm-6 col-md-3 p-lg-4 text-center">
+                    <img src="img/imagen03.jpg" alt="" class="img-fluid">
+                    <h4 class="bg-fucsia text-center text-white p-2">Título</h4>
+                </article>
+                <article class="col-12 col-sm-6 col-md-3 p-lg-4 text-center">
+                    <img src="img/imagen04.jpg" alt="" class="img-fluid">
+                    <h4 class="bg-fucsia text-center text-white p-2">Título</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gris container-fluid p-3">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <img src="img/logo.png" alt="" class="logo-footer">
+                <p class="text-white">Dirección</p>
+                <p class="text-white">Teléfono</p>
+                <p class="text-white">Email</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.373325758693!2d-58.56500363459!3d-34.670526168543546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1606954836116!5m2!1ses!2sar"></iframe>
+            </div>
+            <div class="col-12 col-md-4">
+                <div>
+                    <h4 class="bg-fucsia d-inline-block p-2 mt-3 text-uppercase text-white mb-4">Comunicate</h4>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellido *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Email *">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="3" class="form-control" placeholder="Mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="enviar" class="btn bg-celeste text-white float-right text-uppercase">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-celeste text-white container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <small>@Copyright PM1 / PW1 2020</small>
+            </div>
+            <div class="col-12 col-md-6 text-right">
+                <small>iconos</small>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

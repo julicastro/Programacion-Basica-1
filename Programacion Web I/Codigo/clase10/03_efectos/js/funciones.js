@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $("#abrir").click(function(){
+        //$(".popup").show();
+        $(".popup").fadeIn();
+    });
+    $("#cerrar").click(function(){
+        //$(".popup").hide();
+        $(".popup").fadeOut();
+    });
+    $("#mostrar").click(function(){
+        if($(".texto").is(':hidden')){
+            $(".texto").show();
+        }
+    });
+    $("#ocultar").click(function(){
+        if($(".texto").is(':visible')){
+            $(".texto").hide();
+        }
+        
+    });
+});

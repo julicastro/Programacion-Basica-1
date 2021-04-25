@@ -1,0 +1,54 @@
+@import url(etiquecosas.css);
+body{
+    font-size: 80%;
+}
+h3{
+    font-family: 'Just Another Hand',sans-serif;
+    color:#dc6765;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+    
+}
+p{
+    font-size: 1.1em;
+}
+.est{
+    font-size: 1.2em;
+}
+.estado{
+    font-size: 2.5em;
+    font-family: 'Just Another Hand',sans-serif;
+}
+a{
+    color:#29b497;
+    text-decoration: none;
+    font-size: 1.2em; 
+}
+a:hover{
+    color:#000;
+}
+.personalizacion{
+    padding:1em 0;
+    text-align: center;
+}
+@media screen and (min-width:40em){
+    body{
+        font-size: 90%;
+    }
+    .personalizacion{
+        padding:2em 0;
+
+    }
+}
+@media screen and (min-width:60em){
+    body{
+        font-size: 100%;
+    }
+    .personalizacion{
+        padding:4em 0;
+
+    }
+    
+}

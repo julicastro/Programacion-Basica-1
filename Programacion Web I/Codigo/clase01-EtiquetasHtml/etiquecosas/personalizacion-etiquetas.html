@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiquecosas</title>
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand|Yanone+Kaffeesatz:400,700|Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/magnific-popup.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.arctext.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script src="js/filtros.js" charset="utf-8"></script>
+    <script src="js/personalizacion.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+           <figure>
+                <img src="img/logo.png" alt="Etiquecosas" />
+           </figure>
+           <figure class="frase">
+                <img src="img/txt_header.png" alt="Identifica tus objetos con onda!" />
+           </figure>
+           <div class="clearfix"></div>
+        </div>
+    </header>
+    <section>
+       <div class="container">    
+            <h1>Personalizá tus Etiquetas</h1>
+            <div class="personalizacion">
+                <article class="spotrosa spot" id="vistaprevia">
+                    <h3>Vista Previa</h3>
+                    <img src="img/personajes/spot01.png" />
+                    <div id="texto" class="normal">
+                        <p><span id="nombre" class="rosa">Nombre</span></p>
+                        <p class="curvodos"><span id="apellido" class="rosa">Apellido</span></p>
+                    </div>
+                    
+                </article>
+                <article class="opciones der">
+                    <form class="" id="formulario" action="#" method="post">
+                        <div class="paso">
+                            <label>Paso 1 - Seleccioná el tamaño:</label>
+                            <div class = "tam linea">
+                                <input type="radio" name="tam" value="mini"/>
+                                <img src="img/tam/mini.png" alt="" align="middle"/>
+                                <input type="radio" name="tam" value="maxi" />
+                                <img src="img/tam/maxi.png" alt="" align="middle"/>
+                                <input type="radio" name="tam" value="spot" checked/>
+                                <img src="img/tam/spot.png" alt="" align="middle"/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="paso">
+                            <div class="izqcolor">
+                               <label class="bloque">Paso 2 - Seleccioná el Color: </label> 
+                            </div>
+                            <div class="izqcolor line">
+                                <input type="radio" name="filtro" value="todos" checked /> Todos  
+                                <input type="radio" name="filtro" value="nena" />  Nena 
+                                <input type="radio" name="filtro" value="varon" /> Varón 
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="colores">
+                                <div id="nena" class="float">
+                                    <div class="color">
+                                        <img src="img/colores/color01.png" alt="" />
+                                        <input type="radio" name="color" value="magenta" />
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color02.png" alt="" />
+                                        <input type="radio" name="color" value="rosa" checked/>
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color03.png" alt="" />
+                                        <input type="radio" name="color" value="violeta" />
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color04.png" alt="" />
+                                        <input type="radio" name="color" value="lila" />
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color10.png" alt="" />
+                                        <input type="radio" name="color" value="blanros" />
+                                    </div>
+                                </div>
+                                    <div class="color">
+                                        <img src="img/colores/color08.png" alt="" />
+                                        <input type="radio" name="color" value="rojo" />
+                                    </div>
+                                <div id="varon" class="float">
+                                   <div class="color">
+                                        <img src="img/colores/color05.png" alt="" />
+                                        <input type="radio" name="color" value="azul" />
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color06.png" alt="" />
+                                        <input type="radio" name="color" value="celeste" />
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color07.png" alt="" />
+                                        <input type="radio" name="color" value="verde" />
+                                    </div>
+                                    <div class="color">
+                                        <img src="img/colores/color09.png" alt="" />
+                                        <input type="radio" name="color" value="blancel" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--Texto-->
+                        <div class="paso">
+                            <div class="izq">
+                                <label class="bloque">Nombre/s (Línea 1) </label>
+                                <input type="text" id="nombreInput" name="nombre" maxlength="12" 
+                                    placeholder="Nombre" />
+                                <p class = "aclaracion"> Max. caracteres 12</p>
+                            </div>
+                            <div class="der">
+                                <label class="bloque">Apellido/s (Línea 2) </label>
+                                <input type="text" id="apellidoInput" name="apellido" maxlength="12"
+                                     placeholder="Apellido" />
+                                <p class = "aclaracion"> Max. caracteres 12</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--Personaje-->
+                        <div class="paso">
+                            <label class="bloque">Paso 4 - Seleccioná el Personaje o ícono: </label>
+                            <a href="#personaje" class="btnverde open-popup-link"> Elegir Personaje</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--Protectores-->
+                        <div class="paso">
+                            <label class="bloque">¿Desea Agregar Protectores Transparentes?</label>
+                            <select name="protectores">
+                                <option value="">Seleccione...</option>
+                                <option value="no">No, gracias</option>
+                                <option value="si">Si, quiero agregar los protectores transparentes $25</option>
+                            </select>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </form>
+                    <button class="confirmar" id="submit" >Confirmar</button>
+                </article>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <article id="personaje" class="white-popup mfp-hide">
+           <div class="headper">
+               <h2 class="per">Elegí el Personaje o Ícono:</h2>
+               <div class="derpersonaje line">
+                    <input type="radio" name="filtroper" value="todos" checked /> Todos  
+                    <input type="radio" name="filtroper" value="nena" />  Nena 
+                    <input type="radio" name="filtroper" value="varon" /> Varón 
+                    <input type="radio" name="filtroper" value="futbol" /> Fútbol 
+                    <input type="radio" name="filtroper" value="alergia" /> Alergias 
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini01.png" alt="" />
+                <input type="radio" name="personaje" value="01" checked id="radioper">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini02.png" alt="" />
+                <input type="radio" name="personaje" value="02">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini03.png" alt="" />
+                <input type="radio" name="personaje" value="03">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini04.png" alt="" />
+                <input type="radio" name="personaje" value="04">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini05.png" alt="" />
+                <input type="radio" name="personaje" value="05">
+            </div>
+
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini06.png" alt="" />
+                <input type="radio" name="personaje" value="06">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini07.png" alt="" />
+                <input type="radio" name="personaje" value="07">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini08.png" alt="" />
+                <input type="radio" name="personaje" value="08">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini09.png" alt="" />
+                <input type="radio" name="personaje" value="09">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini10.png" alt="" />
+                <input type="radio" name="personaje" value="10">
+            </div>
+
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini11.png" alt="" />
+                <input type="radio" name="personaje" value="11">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini12.png" alt="" />
+                <input type="radio" name="personaje" value="12">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini13.png" alt="" />
+                <input type="radio" name="personaje" value="13">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini14.png" alt="" />
+                <input type="radio" name="personaje" value="14">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini15.png" alt="" />
+                <input type="radio" name="personaje" value="15">
+            </div>
+
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini16.png" alt="" />
+                <input type="radio" name="personaje" value="16">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini17.png" alt="" />
+                <input type="radio" name="personaje" value="17">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini18.png" alt="" />
+                <input type="radio" name="personaje" value="18">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini19.png" alt="" />
+                <input type="radio" name="personaje" value="19">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini20.png" alt="" />
+                <input type="radio" name="personaje" value="20">
+            </div>
+
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini21.png" alt="" />
+                <input type="radio" name="personaje" value="21">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini22.png" alt="" />
+                <input type="radio" name="personaje" value="22">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini23.png" alt="" />
+                <input type="radio" name="personaje" value="23">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini24.png" alt="" />
+                <input type="radio" name="personaje" value="24">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini25.png" alt="" />
+                <input type="radio" name="personaje" value="25">
+            </div>
+
+             <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini26.png" alt="" />
+                <input type="radio" name="personaje" value="26">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini27.png" alt="" />
+                <input type="radio" name="personaje" value="27">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini28.png" alt="" />
+                <input type="radio" name="personaje" value="28">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini29.png" alt="" />
+                <input type="radio" name="personaje" value="29">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini30.png" alt="" />
+                <input type="radio" name="personaje" value="30">
+            </div>
+
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini31.png" alt="" />
+                <input type="radio" name="personaje" value="31">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini32.png" alt="" />
+                <input type="radio" name="personaje" value="32">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini33.png" alt="" />
+                <input type="radio" name="personaje" value="33">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini34.png" alt="" />
+                <input type="radio" name="personaje" value="34">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini35.png" alt="" />
+                <input type="radio" name="personaje" value="35">
+            </div>
+
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini36.png" alt="" />
+                <input type="radio" name="personaje" value="36">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini37.png" alt="" />
+                <input type="radio" name="personaje" value="37">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini38.png" alt="" />
+                <input type="radio" name="personaje" value="38">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini39.png" alt="" />
+                <input type="radio" name="personaje" value="39">
+            </div>
+            <div class="element-item perambos" data-category="transition">
+                <img src="img/personajes/mini40.png" alt="" />
+                <input type="radio" name="personaje" value="40">
+            </div>
+
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini41.png" alt="" />
+                <input type="radio" name="personaje" value="41">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini42.png" alt="" />
+                <input type="radio" name="personaje" value="42">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini43.png" alt="" />
+                <input type="radio" name="personaje" value="43">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini44.png" alt="" />
+                <input type="radio" name="personaje" value="44">
+            </div>
+            <div class="element-item pernena" data-category="transition">
+                <img src="img/personajes/mini45.png" alt="" />
+                <input type="radio" name="personaje" value="45">
+            </div>
+
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini46.png" alt="" />
+                <input type="radio" name="personaje" value="46">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini47.png" alt="" />
+                <input type="radio" name="personaje" value="47">
+            </div>
+            <div class="element-item pernenfut" data-category="transition">
+                <img src="img/personajes/mini48.png" alt="" />
+                <input type="radio" name="personaje" value="48">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini49.png" alt="" />
+                <input type="radio" name="personaje" value="49">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini50.png" alt="" />
+                <input type="radio" name="personaje" value="50">
+            </div>
+
+
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini51.png" alt="" />
+                <input type="radio" name="personaje" value="51">
+            </div>
+            <div class="element-item pernene" data-category="transition">
+                <img src="img/personajes/mini52.png" alt="" />
+                <input type="radio" name="personaje" value="52">
+            </div>
+            <div class="element-item peralergia" data-category="transition">
+                <img src="img/personajes/mini53-texto.png" alt="" />
+                <input type="radio" name="personaje" value="53">
+            </div>
+            <div class="element-item peralergia" data-category="transition">
+                <img src="img/personajes/mini54-texto.png" alt="" />
+                <input type="radio" name="personaje" value="54">
+            </div>
+            <div class="element-item peralergia" data-category="transition">
+                <img src="img/personajes/mini55-texto.png" alt="" />
+                <input type="radio" name="personaje" value="55">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini56.png" alt="" />
+                <input type="radio" name="personaje" value="56">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini57.png" alt="" />
+                <input type="radio" name="personaje" value="57">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini58.png" alt="" />
+                <input type="radio" name="personaje" value="58">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini59.png" alt="" />
+                <input type="radio" name="personaje" value="59">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini60.png" alt="" />
+                <input type="radio" name="personaje" value="60">
+            </div>
+            
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini61.png" alt="" />
+                <input type="radio" name="personaje" value="61">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini62.png" alt="" />
+                <input type="radio" name="personaje" value="62">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini63.png" alt="" />
+                <input type="radio" name="personaje" value="63">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini64.png" alt="" />
+                <input type="radio" name="personaje" value="64">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini65.png" alt="" />
+                <input type="radio" name="personaje" value="65">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini66.png" alt="" />
+                <input type="radio" name="personaje" value="66">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini67.png" alt="" />
+                <input type="radio" name="personaje" value="67">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini68.png" alt="" />
+                <input type="radio" name="personaje" value="68">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini69.png" alt="" />
+                <input type="radio" name="personaje" value="69">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini70.png" alt="" />
+                <input type="radio" name="personaje" value="70">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini71.png" alt="" />
+                <input type="radio" name="personaje" value="71">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini72.png" alt="" />
+                <input type="radio" name="personaje" value="72">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini73.png" alt="" />
+                <input type="radio" name="personaje" value="73">
+            </div>
+            <div class="element-item perfutbol" data-category="transition">
+                <img src="img/personajes/mini74.png" alt="" />
+                <input type="radio" name="personaje" value="74">
+            </div>
+
+            <button id="cerrar" class="btnrosa">Seleccionar</button>
+            <div class="clearfix"></div>
+        </article>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Copyright © 2015 ETIQUECOSAS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

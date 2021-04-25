@@ -1,0 +1,104 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.datoscliente{
+    background:#c2599b ;
+    color:#fff;
+    padding: 0.5em;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 0.9em;
+}
+.descripcion{
+    color: #434343;
+}
+.acciones p{
+    float: left;
+    display: inline;
+    text-align: left;
+}
+.paginacion, .acciones p{
+    margin: 0.3em;
+    background: #fff;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    -webkit-box-shadow: 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px rgba(0,0,0,0.3);
+}
+.paginacion{
+    max-width: 280px;
+}
+.bold{
+    font-weight: bold;
+}
+.der{
+    float: right;
+}
+label{
+    font-size: 0.9em;
+    margin-right: 0.5em;
+}
+select{
+    padding: 0.5em;
+    margin-right: 2em;
+}
+.login{
+    background: #c2599b;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    float: right;
+    text-align: right;
+    margin: 0.5em 0;
+    color: #fff;
+}
+.login a{
+    color: #fff;
+}
+.login a:hover{
+    color: #000;
+}
+i{
+    margin-left:0.5em;
+}
+.filtros{
+    padding: 0.5em;
+}
+.filtros a, .paginacion a{
+    margin-left: 0.5em;
+    color: #c2599b;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+.paginacion a{
+    padding: 0 0.5em;
+    margin-left: 0em;
+}
+.filtros a:hover, .paginacion a:hover, a.selected{
+    background: #c2599b;
+    color: #fff;
+}
+@media screen and (min-width:40em){
+        .doscol{
+            width: 47%;
+            float:left;
+        }
+        .doscol:nth-child(2){
+            float: right;
+            text-align: right;
+        }
+        .trescol{
+            width: 32%;
+            margin-right: 1%;
+            float: left;
+        }
+        .ultimo{
+            margin-right: 0;
+            float: right;
+            text-align: right;
+        }
+}

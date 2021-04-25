@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Otro Ejemplo de Slider</title>
+        <!--copiar de acá-->
+        <link rel="stylesheet" href="css/nivo-slider.css"/>
+        <link rel="stylesheet" href="css/default.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> 
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>
+        <!--hasta acá--> 
+    </head>
+    <body>
+        <section class="contenedor">
+            <article class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider"> 
+                    <img src="img/toystory.jpg" alt="" /> 
+                    <img src="img/up.jpg" alt="" title="si queremos ponerle un texto" /> 
+                    <img src="img/walle.jpg" alt="" data-transition="slideInLeft" /> 
+                    <img src="img/nemo.jpg" alt="" title="titulo" /> 
+                </div>
+            </article>
+        </section>
+    </body>
+</html>

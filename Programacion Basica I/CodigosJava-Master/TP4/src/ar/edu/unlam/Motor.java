@@ -3,7 +3,7 @@ package ar.edu.unlam;
 public class Motor{
 
 	private int tipoBomba;
-	private String tipoFluido;
+	private String tipoFluido; 
 	private String combustible;
 	
 	public Motor(int tipoBomba, String tipoFluido, String combustible){

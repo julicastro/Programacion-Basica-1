@@ -4,9 +4,10 @@ public class Calculadora{
 
 	private double operador1;
 	private double operador2;
-	private double resultado;
+	private double resultado = 1.0;
 	
 	public Calculadora(){
+		
 	}
 	
 	public Calculadora(double operador1, double operador2){
@@ -66,7 +67,6 @@ public class Calculadora{
 	return this.resultado;
 	}	
 	
-	// POTENCIA
 	public void potencia(double base, double exponente){
 		this.operador1=base;
 		this.operador2=exponente;
@@ -76,7 +76,7 @@ public class Calculadora{
 	}
 	System.out.println("el resultado es: "+resultado);
 	}
-	// SUMATORIA
+	
 	public void sumatoria(int limite){// INT LIMITE ES EL PARAMETRO
 		for(int i=0;i<=limite;i++){
 			this.resultado=this.resultado+i;
@@ -84,7 +84,7 @@ public class Calculadora{
 		}
 		System.out.println("el resultado es: " + this.resultado);
 	}
-	//SUMATORIA 2
+
 	public void sumatoria(int limiteInferior, int limiteSuperior){
 		for(int i=limiteInferior;i<=limiteSuperior;i++){
 		this.resultado=this.resultado+i;
@@ -92,14 +92,16 @@ public class Calculadora{
 		}
 		System.out.println("el resultado es: "+ this.resultado);
 	}
-	// PRODUCTORIA
+
 	public void productoria(int limite){
 		for(int i=1;i<=limite;i++){
-		this.resultado=this.resultado*i;
-		System.out.println("la productoria es " + i + " y el resultado es " + resultado);
+			this.resultado=this.resultado*i;
+			
 		}
-		System.out.println("el resultado es: "+ this.resultado);
+		System.out.println(this.resultado);
+
 	}
+	
 	//PRODUCTORIA 2
 	public void productoria(int limiteInferior, int limiteSuperior){
 		for(int i=limiteInferior;i<=limiteSuperior;i++){

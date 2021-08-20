@@ -1,5 +1,5 @@
 # Programacion-Basica-1
-Contiene toda la práctica realizada práctica realizada en Programación Básica 1 de la Tecnicatura en Desarrollo Web de la UNLaM
+Contiene toda la práctica realizada en Programación Básica 1 de la Tecnicatura en Desarrollo Web de la UNLaM
 
 # Java
 
